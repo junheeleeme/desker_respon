@@ -1,0 +1,271 @@
+@charset "utf-8";
+@font-face {
+    font-family: MalgunGothic;
+    src:url(./fonts/MalgunGothic.eot);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'MalgunGothic', 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #FFFCF7;
+}
+
+a{
+    text-decoration: none;
+    color: #231f20;
+    font-size: 12px;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.gap_80{
+    height: 80px;
+}
+.gap_150{
+    height: 150px;
+}
+
+.header{
+    position: relative;
+    width: 95%;
+    height: 110px;
+    min-width: 1200px;
+    max-width: 1600px;
+}
+
+.logo{
+    position: absolute;
+    top: 25px;
+}
+.logo>a{
+    display: inline-block;
+    width: 150px;
+    height: auto;
+}
+.logo>a>img{
+    width: 100%;
+}
+
+.top-menu{
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+.top-menu>li{
+    display: inline-block;
+    margin-left: 40px;
+    color: #777777;
+}
+.top-menu>li>a:hover, .menu>li>a:hover ,.menu>li>ul>li>a:hover{
+    color: #EE303C;
+}
+
+.menu{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 37px;
+}
+.menu>li{
+    position: relative;
+    display: inline-block;
+}
+.menu>li>a{
+    font-size: 14px;
+    line-height: 37px;
+    margin-right: 80px;
+}
+.menu>li>ul>li>a{
+    display: inline-block;
+    font-size: 12px;
+}
+.menu>li>ul{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 280px;
+    background-color: #fff;
+    z-index: 9999;
+}
+.menu>li>ul>li{
+    display: block;
+    height: 28px;
+    padding: 10px 0 0 10px;
+}
+
+.menu>li:hover ul{
+    display: block;
+    background-color: #FFFCF7;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.menu>li ul{
+    left: -10px;
+}
+
+.cart{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    vertical-align: middle;
+}
+.cart>a{
+    font-size: 15px;
+}
+.cart>a>img{
+    display: block;
+    float: left;
+    letter-spacing: 2px;
+    margin-right: 4px;
+    width: 23px;
+}
+
+.main{
+    width: 100%;
+}
+
+.desker_main_slide{
+    max-width: 1600px;
+    height: 780px;
+    width: 100%;
+}
+.slide_frame{
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.slide_item>img{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+}
+
+.grid_list{
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.grid_wrap{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.grid_item{
+    padding: 0 29.5px;
+}
+.grid_wrap>.grid_col{
+    width: 33%;
+    margin: 0;
+}
+.grid_img, .grid_img>img{
+    width: 100%;
+}
+.grid_txt{
+    margin: 30px 0 70px;
+}
+.grid_txt>.title{
+    font-size: 18px;
+}
+.grid_txt>.category{
+    font-size: 13px;
+}
+
+.grid_cate{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 0 35px;
+}
+
+.title_now{
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.title_now{
+    float: left;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.44;
+    color: #231f20;
+}
+.title_now>sup{
+    position: relative;
+    top: -0.4em;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+.subtitle_now{
+    float:right;
+}
+.subtitle_now>a{
+    position: relative;
+    font-size: 13px;
+    letter-spacing: 0.9px;
+    color: #777777;
+}
+.subtitle_now>a::after{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    transition: 0.3s ease;
+    background-color: #000;
+}
+.subtitle_now>a::before{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    right: 50%;
+    width: 0%;
+    height: 2px;
+    transition: 0.3s ease;
+    background-color: #000;
+}
+.subtitle_now>a::hover{
+    color: #231f20;
+    font-weight: bold;
+}
+.subtitle_now>a:hover::after{
+    width: 50%;
+}
+
+.subtitle_now>a:hover::before{
+    width: 50%;
+}
+
+.subtitle_now>span{
+    color: #777777;
+}
+
+.see_more{
+    width: 100%;
+    text-align: center;
+}
+
+.see_more>a{
+    display: inline-block;
+    width: 193px;
+    height: 50px;
+    background: url("../img/seeMoreStory_bk.png") no-repeat center / 95%;
+}
+
+.see_more>a:hover{
+    background: url("../img/seeMoreStory_red.png") no-repeat center / 95%;
+}
