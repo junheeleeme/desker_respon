@@ -59,9 +59,13 @@ ul{
     right: 0;
 }
 .top-menu>li{
-    display: inline-block;
+    float: left;
+}
+.top-menu>li>a{
+    font-size: 12px;
+    color: #777;
+    font-weight: 400;
     margin-left: 40px;
-    color: #777777;
 }
 .top-menu>li>a:hover, .menu>li>a:hover ,.menu>li>ul>li>a:hover{
     color: #EE303C;
@@ -73,14 +77,18 @@ ul{
     left: 0;
     height: 37px;
 }
+
 .menu>li{
     position: relative;
-    display: inline-block;
+    float: left;
+    height: 100%;
+    vertical-align: middle;
 }
 .menu>li>a{
-    font-size: 14px;
-    line-height: 37px;
     margin-right: 80px;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    line-height: 34px;
 }
 .menu>li>ul>li>a{
     display: inline-block;
@@ -134,20 +142,33 @@ ul{
 }
 
 .desker_main_slide{
-    max-width: 1600px;
-    height: 780px;
-    width: 100%;
+    display: block;
+    width: 1600px;
+    height: 778px;
+    overflow: hidden;
+    border: 1px solid #000;
 }
+
 .slide_frame{
     position: relative;
     width: 100%;
-    margin-bottom: 30px;
+    height: 100%;
 }
 
-.slide_item>img{
+.slide_frame>li{
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
+    max-width: 1600px;
     width: 100%;
+    height: 100%;
+}
+
+.slide_frame>li>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .grid_list{
@@ -183,7 +204,7 @@ ul{
     font-size: 13px;
 }
 
-.grid_cate{
+.title_wrap{
     position: relative;
     display: block;
     width: 100%;
@@ -192,12 +213,9 @@ ul{
 }
 
 .title_now{
-    font-size: 16px;
-    letter-spacing: 2px;
-}
-.title_now{
     float: left;
     font-size: 16px;
+    line-height: 16px;
     font-weight: 500;
     line-height: 1.44;
     color: #231f20;
@@ -268,4 +286,145 @@ ul{
 
 .see_more>a:hover{
     background: url("../img/seeMoreStory_red.png") no-repeat center / 95%;
+}
+
+.brend_story{
+    position: relative;
+    width: 100%;
+    height: 720px;
+    overflow: hidden;
+}
+
+#bs_link{
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    z-index: 10;
+}
+
+.video_bg{
+    width: 100%;
+    height: 720px;
+    text-align: center;
+}
+
+.video_bg>video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2168px;
+    height: auto;
+}
+
+.video_bg::after{
+    content: '';
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('../img/exploreText.png') no-repeat center / 100%;
+    width: 360px;
+    height: 70px;
+    z-index: 100;
+}
+
+.video_bg::before{
+    content: '';
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('../img/exploreBtn.png') no-repeat center / 100%;
+    width: 146px;
+    height: 36px;
+    z-index: 100;
+}
+
+.find_your_desk{
+    width: 100%;
+    background-color: #fff;
+}
+
+.fyd_wrap{
+    position: relative;
+    width: 100%;
+    max-width: 1333px;
+}
+
+.fyd_title{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.44;
+    letter-spacing: 2.1px;
+    color: #231f20;
+    margin-left: -10px;
+}
+
+.fyd_item_wrap{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;    
+}
+
+.fyd_item{
+    width: 31.5%;
+    height: 100%;
+    padding-top: 145px;
+    background-color: rgb(245, 245, 245);
+    margin: 0 10px;
+}
+
+
+.fyd_item:hover{
+    background-color: rgb(229, 229, 229);
+}
+
+.fyd_item>p{
+    padding: 85px 0;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 2.06;
+    letter-spacing: 2.3px;
+}
+
+.store_title{
+    margin-left: -15px;
+}
+
+.desker_store_wrap{
+    position: relative;
+    max-width: 1333.5px;
+    width: 100%;
+}
+
+.store_slide{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.store_slide_frame{
+    text-align: center;
+    max-width: 1333.5px;
+    max-height: 652px;
+    width: 100%;
+    height: 100%;
+}
+
+.store_slide_frame>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 1304px;
+    
 }
