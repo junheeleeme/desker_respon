@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.4.1.js" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+ <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <title>데스커</title>
 </head>
 <body>
@@ -80,29 +84,23 @@
     </header>
     <div class="container">
         <div class="main">
-
-            <div class="desker_main_slide">
-                <ul class="slide_frame">
-                    <li>
-                        <img src="./img/slide1.jpg" alt="slide1">
-                    </li>
-                    <li>
-                        <img src="./img/slide2.jpg" alt="slide2">
-                    </li>
-                    <li>
-                        <img src="./img/slide3.jpg" alt="slide3">
-                    </li>
-                    <li>
-                        <img src="./img/slide4.jpg" alt="slide4">
-                    </li>
-                    <li>
-                        <img src="./img/slide5.jpg" alt="slide5">
-                    </li>
-                </ul>
-                <div class="main_slide_nav">
-                    
+            <div class="mainSlider"> 
+                <div>
+                    <img src="./img/slide1.jpg" alt="slide1">
                 </div>
-            </div>
+                <div>
+                    <img src="./img/slide2.jpg" alt="slide2">
+                </div> 
+                <div>
+                    <img src="./img/slide3.jpg" alt="slide3">
+                </div>
+                <div>
+                    <img src="./img/slide4.jpg" alt="slide4">
+                </div>
+                <div>
+                    <img src="./img/slide5.jpg" alt="slide3">
+                </div>
+             </div>
             <div class="gap_80"></div>
 
             <div class="grid_list">
@@ -223,7 +221,6 @@
                 </div>
             </div>
 
-
             <div class="find_your_desk">
                 <div class="gap_150"></div>
                 
@@ -261,17 +258,16 @@
                             DESKER<sup>®</sup> STORE
                         </span>
                     </div>
-                    <div class="store_slide">
-
-                        <div class="store_slide_frame">
+                    <div class="storeSlider">
+                        <div>
                             <img src="./img/store_planning_desktop_rolling.png" alt="slide1">
+                        </div>
+                        <div>
                             <img src="./img/store_design_desktop.jpg" alt="slide1">
+                        </div>
+                        <div>
                             <img src="./img/store_signature_desktop.jpg" alt="slide1">
                         </div>
-                        <div class="slide_nav">
-
-                        </div>
-
                     </div>
                     
                 </div>
@@ -284,7 +280,107 @@
     <footer class="footer">
         <div class="footer_wrap">
             <div class="footer_menu">
-                
+                <dl class="m1">
+                    <dt><a href="#">PRODUCTS</a></dt>
+                    <dd><a href="#">DESKS</a></dd>
+                    <dd><a href="#">TABLLES</a></dd>
+                    <dd><a href="#">SHELVES</a></dd>
+                    <dd><a href="#">SCHREENS</a></dd>
+                    <dd><a href="#">STORAGES</a></dd>
+                    <dd><a href="#">WORKTOOLS</a></dd>
+                    <dd><a href="#">ACCESSORIES</a></dd>
+                    <dd><a href="#">CHAIRS</a></dd>
+                </dl>
+                <dl class="m2">
+                    <dt><a href="#">ABOUT</a></dt>
+                    <dd><a href="#">STORY</a></dd>
+                    <dd><a href="#">DESIGN STORE</a></dd>
+                    <dd><a href="#">SIGNATURE STORE</a></dd>
+                </dl>
+                <dl class="m3">
+                    <dt><a href="#">DESKER NOW</a></dt>
+                    <dd><a href="#">오피스체인지</a></dd>
+                    <dd><a href="#">월간데스커</a></dd>
+                    <dd><a href="#">소셜미디어</a></dd>
+                    <dd><a href="#">뉴스</a></dd>
+                </dl>
+                <dl class="m4">
+                    <dt><a href="#">LOCATION</a></dt> 
+                </dl>
+                <dl class="m5">
+                    <dt><a href="#">SUPPORT</a></dt>
+                    <dd><a href="#">Q&A</a></dd>
+                    <dd><a href="#">A/S</a></dd>
+                    <dd><a href="#">FAQ</a></dd>
+                    <dd><a href="#">USER GUIDE</a></dd>
+                </dl>
+                <dl class="m6">
+                    <dt><a href="#">기업고객</a></dt>
+                    <dd><a href="#">PLAN WITH DESKER</a></dd>
+                </dl>
+                <dl class="m7">
+                    <dt>Contact US</dt>
+                    <dd>제품 및 배송문의, A/S 문의</dd>
+                    <ul>
+                        <li><img src="./img/desker_chat_footer_pc.png" alt="chatIcon" class="pc_chatIcon"></li>
+                        <li><a href="#">평일 : 09:30 ~ 17:30 / 점심시간 : 12:30 ~ 13:30</a></li>
+                        <li><a href="#">토,일요일 및 공휴일 휴무</a></li>
+                        <li><a href="#">A/S문의 : 토요일 9:30 ~ 12:30</a></li>
+                        <ul class="sns">
+                            <li><a href=""><img src="./img/youtube.png" alt="youtube"></a></li>
+                            <li><a href=""><img src="./img/facebook.png" alt="instagram"></a></li>
+                            <li><a href=""><img src="./img/instagram.png" alt="facebook"></a></li>
+                            <li><a href=""><img src="./img/blog.png" alt=""></a></li>
+                        </ul>
+                    </ul>
+                </dl>
+                <dl class="m8">
+                    <img src="./img/btn_up.png" alt="btn_up">
+                </dl>
+            </div>
+            <div class="dash"></div>
+            <div class="footer_policy">
+                <ul class="policy_pc">
+                    <li>(주)일룸</li>
+                    <li>
+                    대표이사 강성문 | 서울특별시 송파구 오금로 311<br>
+                    사업자등록번호 215-86-93600 | 통신판매신고번호 2009-서울송파-0069호 | 부가통신사업신고필증 021129<br>
+                    A/S 문의 1588-1662 | 개인정보관리책임자 강성문
+                    </li>
+                    <li>Copyright (c) 2019 iloom CO, LTD. All right reserved.</li>
+                </ul>
+                <ul class="policy_m">
+                    <li>(주)일룸</li>
+                    <li>
+                    대표이사 강성문 | 서울특별시 송파구 오금로 311<br>
+                    사업자등록번호 215-86-93600 | 통신판매신고번호 2009-서울송파-0069호 | 부가통신사업신고필증 021129<br>
+                    A/S 문의 : 1588-1662 (토요일 가능 9:30 ~ 12:30)<br>
+                    개인정보관리책임자 강성문
+                    </li>
+                    <li>Copyright (c) 2019 iloom CO, LTD. All right reserved.</li>
+                </ul>
+                <ul class="crt">
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li class="spc">
+                        <a href="" target="_blank" class="pg_spc">에스크로 가입사실 확인</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom_blank"></div>
+        <div class="bottom_banner">
+            <div class="banner_wrap">
+                <div class="left">
+                    <img src="./img/bannerImg.png" alt="banner">
+                    <span>데스커 공간플래너 서비스 오픈</span>
+                </div>
+                <div class="center">
+                    <span>제품 가상 배치부터 결제까지 한번에, 여러분이 상상하던 공간을 직접 꾸며보세요</span>
+                </div>
+                <div class="right">
+                    <span>설계하러 가기</span>
+                </div>
             </div>
         </div>
     </footer>
@@ -292,6 +388,6 @@
 
 </div>
 
-</body>
 <script src="./script/script.js"></script>
+</body>
 </html>

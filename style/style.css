@@ -25,6 +25,10 @@ ul{
     padding-left: 0;
 }
 
+.wrap{
+    margin: 0 auto;
+}
+
 .gap_80{
     height: 80px;
 }
@@ -34,10 +38,9 @@ ul{
 
 .header{
     position: relative;
-    width: 95%;
     height: 110px;
-    min-width: 1200px;
-    max-width: 1600px;
+    width: 100%;
+    max-width: 1600px
 }
 
 .logo{
@@ -137,44 +140,57 @@ ul{
     width: 23px;
 }
 
-.main{
-    width: 100%;
-}
-
-.desker_main_slide{
-    display: block;
-    width: 1600px;
-    height: 778px;
-    overflow: hidden;
-    border: 1px solid #000;
-}
-
-.slide_frame{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.slide_frame>li{
-    position: absolute;
-    top: 0;
-    left: 0;
+.mainSlider{
     max-width: 1600px;
     width: 100%;
-    height: 100%;
+}
+.slick-slide img{
+    width: 100%;    
 }
 
-.slide_frame>li>img{
-    display: block;
+.main-dots{
+    position: relative;
+    bottom: 70px;
+    text-align: left;
+    min-width: 1200px;
+    max-width: 1600px;
+    margin: 0 auto;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    padding-left: 14.8%;
+    box-sizing: border-box;
+}
+.main-dots>li{
+    position: relative;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.main-dots>li>button{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    padding: 0px;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+}
+
+.slick-active>button{
+    background-color: #000;
 }
 
 .grid_list{
     position: relative;
-    width: 100%;
-    max-width: 1300px;
+    width: 1300px;
+    
 }
 
 .grid_wrap{
@@ -310,6 +326,7 @@ ul{
     width: 100%;
     height: 720px;
     text-align: center;
+    overflow: hidden;
 }
 
 .video_bg>video{
@@ -317,7 +334,7 @@ ul{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 2168px;
+    width: 100%;
     height: auto;
 }
 
@@ -353,7 +370,7 @@ ul{
 .fyd_wrap{
     position: relative;
     width: 100%;
-    max-width: 1333px;
+    width: 1333px;
 }
 
 .fyd_title{
@@ -395,36 +412,254 @@ ul{
     letter-spacing: 2.3px;
 }
 
+.title_wrap{
+    position: relative;
+    width: 1335px;
+    width: 100%;
+}
+
 .store_title{
     margin-left: -15px;
 }
 
-.desker_store_wrap{
-    position: relative;
-    max-width: 1333.5px;
+.storeSlider{
+    width: 1304px;
     width: 100%;
 }
 
-.store_slide{
+.store-dots{
     position: relative;
-    width: 100%;
-    height: 100%;
-}
-.store_slide_frame{
+    bottom: -20px;
     text-align: center;
-    max-width: 1333.5px;
-    max-height: 652px;
+    margin: 0 auto;
     width: 100%;
-    height: 100%;
+    box-sizing: border-box;
+}
+.store-dots>li{
+    position: relative;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+    padding: 0;
+    cursor: pointer;
+}
+.store-dots>li>button{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    padding: 0px;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
 }
 
-.store_slide_frame>img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+.footer{
+    width: 100%;
+    width: 1300px;
+    border-top: 1px solid #7A7673;
+}
+
+.footer_wrap{
+    width: 1270px;
+}
+
+.footer_menu{
+    padding: 40px 0 50px;
+    
+}
+
+.footer_menu>dl{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer_menu>dl>dt{
+    font-size: 12px;
+    color: #231F20;
+    font-weight: 500;
+}
+.footer_menu>dl>dd>a{
+    font-size: 12px;
+    color: #777777;
+}
+.footer_menu>dl>dt{
+    height: 35px;
+}
+.footer_menu>dl>dd{
+    height: 27px;
+}
+
+.m1>dt, .m1>dd{
+    width: 150px;
+}
+.m2>dt, .m2>dd{
+    width: 150px;
+}
+.m3>dt, .m3>dd{
+    width: 140px;
+}
+.m4>dt, .m4>dd{
+    width: 130px;
+}
+.m5>dt, .m5>dd{
+    width: 120px;
+}
+.m6>dt, .m6>dd{
+    width: 200px;
+}
+.m7{
+    width: 310px;
+    height: 35px;
+}
+
+.m7>dd, .m7>ul>li>a{
+    font-size: 12px;
+    color: #777777;
+}
+
+.m8>img{
+    width: 40px;
+}
+
+
+.pc_chatIcon{
+    width: 62px;
+    height: 17px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+.sns>li{
+    display: inline-block;
+    margin: 20px 10px 0 0;
+}
+.sns>li:first-child>a>img{
+    width: 16px;
+}
+.sns>li:nth-child(2)>a>img{
+    width: 7.5px;
+}
+.sns>li:nth-child(3)>a>img{
+    width: 13px;
+}
+.sns>li:last-child>a>img{
+    width: 25px;
+}
+.dash{
+    background: url('../img/dash.png') repeat-x;
+    height: 1px;
+}
+.footer_policy{
+    padding: 30px 0 20px;
+}
+.policy_pc{
+    display: block;
+    display: inline-block;
+}
+.policy_pc>li{
+    font-size: 12px;
+    color: #777;
+    line-height: 180%;
+    margin-bottom: 17px;
+}
+
+.policy_m{
+    display: none;
+}
+
+.crt{
+    float: right;
+    width: 300px;
+    margin-top: 41px;
+    margin-right: 62px;
+}
+.crt>li{
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 7px;
+}
+
+.spc{
+    padding: 6px 0 0 32px;
+    line-height: 12px;
+    background: url('../img/spc_desker1.png') no-repeat left top;
+    background-size: 28px 18px;
+}
+
+.bottom_blank{
+    height: 80px;
+}
+
+.banner_wrap>div{
+    display: inline-block;
+    line-height: 80px;
+}
+
+.banner_wrap>div>span{
+    font-size: 12px;
+    color: #231f20;
+    font-weight: 600;   
+}
+
+.left{
+    margin-left: 160px;
+    float: left;
+}
+.left>img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.right{
+    margin-right: 160px;
+    float: right;
+}
+
+.bottom_banner{
+    position: fixed;
     bottom: 0;
     width: 100%;
-    max-width: 1304px;
-    
+    height: 80px;
+    text-align: center;
+    background: #ebe7e1;
+}
+
+
+@media screen and (min-width:1024px) and (max-width: 1300px) {
+
+	.header{
+        width: 90%;
+    }
+    .grid_list{
+        width: 100%;
+    }
+    .fyd_wrap{
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    .policy_pc{
+        display: none;
+    }
+    .policy_m{
+        display: block;
+    }
+    .footer_policy{
+        padding: 40px 0 50px;
+    }
 }
