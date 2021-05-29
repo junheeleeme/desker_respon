@@ -223,7 +223,7 @@ ul{
 .second_style>.grid_col{
     display: inline-block;
     vertical-align: top;
-    width: 49.5%;
+    width: 49%;
     margin: 0;
 }
 .thrid_style{
@@ -704,11 +704,17 @@ ul{
         letter-spacing: 2.1px;
         text-align: center;
         margin-bottom: 10px;
+        margin-left: 0;
         color: #231f20;
     }
     .subtitle_now{
         width: 100%;
         text-align: center;
+        margin: 0;
+
+    }
+    .subtitle_now>a{
+        font-size: 11px;
     }
     .grid_item{
         padding: 0 15px;
@@ -773,6 +779,28 @@ ul{
     }
     
 }
+
+@media screen and (max-width:768px) { /*brend story*/
+
+    .video_bg{
+        width: 100%;
+        height: 470px;
+        min-width: 375px;
+        max-width: 768px;
+    }
+    .video_bg>video{
+        width: 1200px;
+    }
+    .video_bg::after{
+        background: url('../img/exploreText.png') no-repeat center / 75%;
+    }
+    .video_bg::before{
+        background: url('../img/exploreBtn.png') no-repeat center / 75%;
+    }
+
+}
+
+
 @media screen and (min-width: 769px) and (max-width: 1300px) {  /* footer */
 
     .m1, .m2, .m3, .m4, .m5{
@@ -849,4 +877,10 @@ ul{
 
 @media (max-width: 1280px){ /* footer */
     
+}
+
+
+@media screen and (max-width: 615px){
+
+   
 }
