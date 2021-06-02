@@ -1,14 +1,4 @@
-//Variables
-
-
-
-
-//Functions
-
-
-
 //Event Handler
-
 $(document).ready(function() {
 
     $('.mainSlider').slick({ //mainSlider
@@ -39,3 +29,9 @@ $(document).ready(function() {
 
 });
 
+
+$(".m8").click(function(){
+    $('html, body').animate({
+        scrollTop: 0 
+     }, 800);
+})
