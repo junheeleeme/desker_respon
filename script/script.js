@@ -35,3 +35,14 @@ $(".m8").click(function(){
         scrollTop: 0 
      }, 800);
 })
+
+$(".mobile-menu").click(function(){
+    $(".mobile-nav").fadeIn(300);
+    $('html, body').addClass('scrollX');
+    
+})
+
+$(".btn-close").click(function(){
+    $(".mobile-nav").fadeOut(300);
+    $('html, body').removeClass('scrollX');
+})

@@ -35,6 +35,12 @@ ul{
 .gap_150{
     height: 150px;
 }
+.scrollX {
+    height:100%; 
+    min-height:100%; 
+    overflow:hidden 
+    !important; touch-action:none;
+}
 
 /* ----- Header ------ */
 
@@ -150,6 +156,75 @@ ul{
     margin-right: 4px;
     width: 23px;
 }
+
+.right-side-banner{
+    position: fixed;
+    bottom: 103px; right: 24px;
+    z-index: 9999;
+}
+.right-side-banner>div{
+    width: 118px;
+    height: 44px;
+    background: #333333;
+    border-radius:22px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.right-side-banner>div>img{
+    margin-top: -2px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.right-side-banner>div>span{
+    color: #fff;
+    font-size: 14px;
+    line-height: 44px;
+}
+
+.mobile-nav{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFCF7;
+    text-align: center;
+    z-index: 99999;
+}
+
+.mobile-nav-wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-close{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    background: url('../img/btn_close.png') no-repeat center / 100%;
+    cursor: pointer;
+}
+
+.mobile-nav-wrap>ul:last-child{
+    margin-top: 30px;
+}
+
+.mobile-nav-wrap>ul>li{
+    display: block;
+    padding: 12px 0;
+}
+.mobile-nav-wrap>ul>li>a{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
 
 @media screen and (max-width: 1300px) { 
 	.header{
@@ -790,6 +865,22 @@ ul{
     width: 100%;
 }
 
+.mobile-sns{
+    display: none;
+    margin-top: 20px;
+}
+
+.mobile-sns>a{
+    display: inline-block;
+    color: #231f20;
+    margin-right: 20px;
+}
+
+.mobile-sns>a>img{
+    width: auto;
+    height: 15px;
+}
+
 .pc_chatIcon{
     width: 62px;
     height: 17px;
@@ -890,7 +981,14 @@ ul{
     height: 80px;
     text-align: center;
     background: #ebe7e1;
+    cursor: pointer;
+    z-index: 9999;
 }
+
+.bottom_banner:hover{
+    background-color: #e3e3e3;
+}
+
 @media screen and (max-width: 1300px) { 
     .footer_wrap{
         width: 100%;
@@ -926,6 +1024,7 @@ ul{
     
     .footer_menu{
         position: relative;
+        padding: 30px 0 20px 0;
     }
     .m1, .m2, .m4, .m5{ width: 27%; }
     .m3, .m6{ width: 40%; }
@@ -934,11 +1033,13 @@ ul{
     }
     .m8{ 
         position: absolute;
-        top: 40px;
+        top: 30px;
         right: 30px;
         width: 32.5px; 
     }
-
+    .mobile-sns{
+        display: block;
+    }
     .policy_pc{
         display: none;
     }
