@@ -1034,7 +1034,7 @@ ul{
     .m8{ 
         position: absolute;
         top: 30px;
-        right: 30px;
+        right: 20px;
         width: 32.5px; 
     }
     .mobile-sns{
@@ -1076,6 +1076,14 @@ ul{
     .bottom_banner{
         display: none;
     }
+}
+@media (max-width: 350px){ /* footer */
+
+    .m8{ 
+        right: 5px;
+        width: 32.5px; 
+    }
+
 }
 /* ----- footer ------ */
 
