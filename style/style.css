@@ -47,8 +47,10 @@ ul{
 .header{
     position: relative;
     height: 110px;
-    width: 100%;
-    max-width: 1600px
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1600px;
+    
 }
 .mobile-menu{
     display: none;
